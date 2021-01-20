@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+body {
+  background-color: #ffcccc;
+  font-family: "游ゴシック体";
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.h1Box {
+  display: block;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.btnRed {
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8rem;
+  padding: 1rem;
+  background-color: #ff7f7f;
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.btnRed:hover {
+  background-color: #ff9999;
+}
+
+.resultBox {
+  display: block;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+  padding: 2rem;
+  border: 6px solid;
+  border-color: #ff7f7f;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="discription" content="おみくじバージョン1.0">
+
+<title>おみくじバージョン1.0</title>
+
+<link rel="stylesheet" href="reset.css" type="text/css" />
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+
+<body>
+<main>
+  <section>
+     
+    <div class="inner"></div>
+      <div class="h1Box">
+        <h1>2021年 新春おみくじ！</h1>
+      </div>
+      
+      <div class="btnRed" id="lotteryBtn">
+        <span>おみくじを引く</span>
+      </div>
+
+      <div class="resultBox" id="resultBox">
+        <span>ボタンを押してね！</span>
+      </div>   
+    </div>
+
+    <script type="text/javascript">
+      document.getElementById("lotteryBtn").onclick = function() {
+        var lottery = parseInt(Math.random()*10, 10) % 9;        
+        if(lottery > 4) {
+          result = "大吉";
+        } else if(lottery == 4) {
+          result = "中吉";
+        } else if(lottery == 3) {
+          result = "吉";
+        } else if(lottery == 2) {
+          result = "小吉";
+        } else if(lottery == 1) {
+          result = "末吉";
+        } else {
+          result = "凶";
+        } 
+        document.getElementById("resultBox").innerHTML = result;
+        document.getElementById("lotteryBtn").innerHTML = "もういちど引く";
+      }
+    </script>
+
+  </section>
+</main>
+
+</body>
+</html>
